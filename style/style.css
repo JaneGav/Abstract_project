@@ -1,0 +1,570 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  background: white;
+  line-height: 1;
+  color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+
+
+body {
+  font-family: Futwora;
+  color: black;
+}
+
+.central {
+  background-image: url(../images/Backgr.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 550px;
+  position: relative;
+}
+
+.panel {
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.picture_container {
+  margin: 30px;
+}
+
+.big_row .picture_container:last-child {
+  margin-bottom: 0;
+}
+
+.picture_container:hover {
+  cursor: pointer;
+}
+
+.picture_container:hover img {
+  opacity: 0.2;
+  transition-duration: 1s;
+}
+
+.picture_container:hover p {
+  opacity: 1;
+  z-index: 10;
+}
+
+.name {
+  opacity: 0;
+  color: black;
+  position: absolute;
+  text-align: left;
+  font-size: 24px;
+  line-height: 40px;
+  line-height: 30px;
+  z-index: 10;
+  top: 120px;
+  margin-left: 60px;
+}
+
+.long_name{
+  margin-left: 30px;
+}
+
+.special {
+  opacity: 0;
+  color: black;
+  position: absolute;
+  text-align: left;
+  font-family: Futwora;
+  font-size: 24px;
+  line-height: 30px;
+  z-index: 10;
+  top: 420px;
+  margin-left: 60px;
+}
+
+#navBar ul {
+  list-style: none;
+}
+
+#navBar li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.nav_text {
+  color: black;
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+}
+
+.nav_text:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#headline {
+  font-size: 60px;
+  position: absolute;
+  top: 140px;
+  left: 80px;
+  line-height: 80px;
+  text-align: left;
+}
+
+.nav_text {
+  float: left;
+  left: 130pxx;
+  font-size: 18px;
+  position: relative;
+  bottom: 15px;
+  line-height: 1.5px;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px;
+}
+
+.text {
+  font-size: 14px;
+  position: absolute;
+  top: 380px;
+  left: 80px;
+  line-height: 25px;
+  text-align: left;
+}
+
+#button {
+  position: relative;
+  margin: 40px auto;
+  display: block;
+  padding: 15px;
+  font-family: Futwora;
+  font-size: 18px;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #faebe6;
+  cursor: pointer;
+}
+
+#button:active {
+  background-color: #faebe6;
+  cursor: pointer;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+footer p {
+  position: relative;
+  font-family: Futwora;
+  font-size: 12px;
+  top: 100px;
+  margin-bottom: 50px;
+}
+
+#contacts {
+  position: relative;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#contacts img {
+  border: 5px solid black;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#contacts img:hover {
+  background-color: #faebe6;
+  cursor: pointer;
+}
+
+#owner {
+  float: left;
+  margin-left: 50px;
+}
+
+#author {
+  float: right;
+}
+
+@font-face {
+  font-family: Futwora;
+  src: url("../fonts/FutworaProBoldBold.woff2.ttf");
+}
+
+@media only screen and (max-width: 1199px) {
+  #headline {
+    font-size: 40px;
+    line-height: 50px;
+    top: 80px;
+    left: 35px;
+  }
+
+  .text {
+    font-size: 16px;
+    top: 280px;
+    line-height: 20px;
+    left: 35px;
+  }
+
+  .central {
+    height: 430px;
+    background-color: #faebe6;
+  }
+
+  .pictures {
+    width: 200px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 16px;
+    line-height: 20px;
+    top: 120px;
+    margin-left: 60px;
+  }
+
+  .special {
+    font-size: 16px;
+    line-height: 20px;
+    top: 350px;
+    margin-left: 60px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1184px) {
+  #headline {
+    font-size: 30px;
+    line-height: 40px;
+    left: 35px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .central {
+    height: 430px;
+    background-color: #faebe6;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #headline {
+    font-size: 20px;
+    line-height: 30px;
+    top: 160px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .central {
+    height: 430px;
+    background: #faebe6;
+  }
+
+  .name {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 40px;
+  }
+
+  .special {
+    font-size: 14px;
+    line-height: 18px;
+    top: 330px;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  #headline {
+    left: 25px;
+  }
+
+  .central {
+    height: 330px;
+    background: #faebe6;
+  }
+
+  .pictures {
+    width: 150px;
+    height: 150px;
+  }
+
+  #button {
+    margin: 40px auto;
+    font-size: 16px;
+    border: 3px solid black;
+  }
+
+  footer p {
+    font-size: 10px;
+    top: 100px;
+    margin-bottom: 50px;
+  }
+
+  #contacts img {
+    border: 3px solid black;
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  .name {
+    top: 80px;
+  }
+
+  .special {
+    top: 280px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .central {
+    width: 400px;
+    height: 400px;
+    background: #faebe6;
+    display: inline-block;
+    text-align: center;
+  }
+
+  #headline {
+    font-size: 44px;
+    line-height: 56px;
+    top: 80px;
+    left: 45px;
+  }
+
+  .text {
+    display: block;
+    font-size: 14px;
+    top: 280px;
+    line-height: 20px;
+    left: 45px;
+  }
+
+  .pictures {
+    width: 400px;
+    height: 400px;
+  }
+
+  .name {
+    font-size: 30px;
+    line-height: 34px;
+    top: 160px;
+    right: 350px;
+  }
+
+  .long_name{
+    left: 150px;
+  }
+
+  .special {
+    font-size: 30px;
+    line-height: 44px;
+    top: 580px;
+    right: 350px;
+  }
+
+  #button {
+    font-size: 10px;
+    padding: 10px;
+    border: 2px solid black;
+  }
+
+  #contacts img {
+    border: 2px solid black;
+    padding: 6px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 632px) {
+  #headline {
+    font-size: 30px;
+    line-height: 40px;
+    top: 40px;
+    left: 40px;
+  }
+
+  .text {
+    display: block;
+    font-size: 10px;
+    top: 200px;
+    line-height: 18px;
+    left: 40px;
+  }
+
+  #navBar li {
+    margin-right: 10px;
+  }
+
+  .nav_text {
+    font-size: 16px;
+  }
+
+  .central {
+    width: 300px;
+    height: 300px;
+  }
+
+  .pictures {
+    width: 300px;
+    height: 300px;
+  }
+
+  .name {
+    font-size: 24px;
+    top: 100px;
+    right: 280px;
+  }
+
+  .special {
+    font-size: 24px;
+    top: 440px;
+    right: 280px;
+  }
+
+  #button {
+    margin: 40px auto;
+    font-size: 12px;
+    padding: 8px;
+    border: 2px solid black;
+  }
+
+  #contacts img {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 532px) {
+  #navBar li {
+    margin-right: 8px;
+  }
+
+  .nav_text {
+    font-size: 14px;
+  }
+
+  .central {
+    width: 300px;
+    height: 300px;
+    background: #faebe6;
+  }
+
+  .name {
+    line-height: 38px;
+    right: 200px;
+  }
+
+  .special {
+    line-height: 44px;
+    right: 210px;
+  }
+}
