@@ -1,0 +1,247 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  background: white;
+  line-height: 1;
+  color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+
+body {
+  width: 100%;
+}
+
+.container-fluid {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Artist {
+  width: 100%;
+  margin-top: 100px;
+}
+
+#artist_header {
+  position: relative;
+  margin: auto;
+}
+
+#artist_name {
+  position: relative;
+  font-family: Futwora;
+  font-size: 50px;
+  margin-left: 200px;
+  top: 200px;
+  float: left;
+  text-align: left;
+}
+
+#artist_img {
+  position: relative;
+  float: right;
+  margin-right: 110px;
+  width: 500px;
+}
+
+#Center {
+  position: relative;
+  margin: auto;
+  margin-top: 150px;
+  width: 100%;
+}
+
+#waterfall {
+  margin: 10px;
+}
+
+#waterfall li {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#waterfall li.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s, top 1s;
+}
+
+#waterfall li > div {
+  font-size: 32px;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 15px;
+  transition: all 0.5s;
+}
+
+#waterfall li > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
+  transition: all 0.3s;
+}
+
+#instagram_logo {
+  position: relative;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+#instagram_logo img {
+  position: relative;
+  margin: auto;
+}
+
+#instagram_logo img:hover {
+  background: #faebe6;
+}
+
+@font-face {
+  font-family: Futwora;
+  src: url(../../../fonts/FutworaProBoldBold.woff2.ttf);
+}
+
+@media only screen and (max-width: 1145px) {
+  #artist_name {
+       font-size: 60px;
+    text-align: center;
+    margin: 0;
+    top: 80px;
+    float: none;
+    line-height: 80px;}
+
+  #artist_img {
+    width: 600px;
+    float: none;
+    margin: 0;
+    margin-top: 150px;
+  }
+
+  #Center {
+    margin-top: 50px;
+  }
+
+  #instagram_logo {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 783px) {
+  #artist_name {   font-size: 48px;
+    text-align: center;
+    margin: 0;
+    top: 80px;
+    line-height: 60px;}
+
+  #artist_img {
+    width: 400px;
+    float: none;
+    margin: 0;
+    margin-top: 150px;
+  }
+
+  #Center {
+    margin-top: 50px;
+  }
+
+  #instagram_logo {
+    margin-top: 250px;
+  }
+}

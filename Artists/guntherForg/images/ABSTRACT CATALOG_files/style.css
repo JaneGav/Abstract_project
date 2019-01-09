@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,  
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,  
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend { 
+  vertical-align: baseline; 
+  font-family: inherit; 
+  font-weight: inherit; 
+  font-style: inherit; 
+  font-size: 100%; 
+  outline: 0; 
+  padding: 0; 
+  margin: 0; 
+  border: 0; 
+  } 
+/* remember to define focus styles! */ 
+:focus { 
+  outline: 0; 
+  } 
+body { 
+  background: white; 
+  line-height: 1; 
+  color: black; 
+  } 
+ol, ul { 
+  list-style: none; 
+  } 
+/* tables still need cellspacing="0" in the markup */ 
+table { 
+  border-collapse: separate; 
+  border-spacing: 0; 
+  } 
+caption, th, td { 
+  font-weight: normal; 
+  text-align: left; 
+  } 
+/* remove possible quote marks (") from <q> & <blockquote> */ 
+blockquote:before, blockquote:after, q:before, q:after { 
+  content: ""; 
+  } 
+blockquote, q { 
+  quotes: "" ""; 
+  } 
+
+
+body {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+#parent{
+  width: 1400px;
+  position: relative;
+  min-width: 420px;
+  margin:30px auto;
+}
+
+#central_block{
+  width: 616px;
+  height: 580px;
+  background-image: url(../images/Backgr.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+#navDiv{
+  position: relative;
+  margin-top:20px;
+}
+
+.pull-me{
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  font-family: arial, sans-serif;
+  font-size: 100px;
+  color: black;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.panel{
+  display: none;
+  position: relative;
+  margin: 30px auto;
+  left:100px;
+}
+
+#navBar li{
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.nav_text{
+  float: left;
+  left: 30pxx;
+  font-size: 18px;
+  font-family: Futwora;
+  position: relative;
+  bottom:15px;
+  line-height: 1.5px;
+  color: black;
+  text-decoration: none;
+}
+
+
+#headline{
+  font-family: Futwora;
+  font-size: 76px;
+  position: absolute;
+  top:160px;
+  left: 40px;
+  line-height: 100px;
+  color: black;
+}
+
+.text{
+  font-family: Futwora;
+  font-size: 18px;
+  position: absolute;
+  top:400px;
+  left: 40px;
+  line-height: 25px;
+  color: black;
+}
+
+#central_pictures{
+  display: inline-block;
+}
+
+.picture_container{
+  position: relative;
+  display: inline-block;
+}
+
+.pictures{
+  width: 260px;
+  height: 260px;
+  padding: 3px;
+  margin: 5px 25px 50px 50px;
+}
+
+#lateral_pictures_left{
+  position: relative;
+  float: left;
+ right:10px;
+}
+
+#lateral_pictures_right{
+  position: relative;
+  float: right;
+  right: 40px;
+ 
+}
+.picture_container:hover{
+ cursor: pointer;
+}
+
+.picture_container:hover img{
+  opacity: 0.2;
+  transition-duration: 1s;
+}
+
+.picture_container:hover p{
+  opacity: 1;
+  z-index: 10;
+}
+
+
+
+.name{
+  opacity: 0;
+  color: black;
+  position: absolute;
+  text-align: left;
+  font-family: Futwora;
+  font-size: 24px;
+  line-height: 30px;
+  z-index: 10;
+}
+
+.picture_container p{
+  top:120px;
+  left:80px;
+}
+
+
+#button{
+  position: relative;
+  margin: 40px auto;
+  display: block;
+  padding: 15px;
+  font-family: Futwora;
+  font-size: 18px;
+  border:5px solid black;
+  cursor: pointer;
+}
+
+#button:hover{
+background-color: #FAEBE6;
+cursor: pointer;
+}
+
+#button:active{
+  background-color: #FAEBE6;
+  cursor: pointer;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+} 
+
+footer p{
+  position: relative;
+  font-family: Futwora;
+  font-size: 12px;
+  top:100px;
+  margin-bottom:50px;
+}
+
+#contacts{
+  position: relative;
+  margin: 100px auto;
+  text-align: center;
+}
+
+#contacts img{
+  border:5px solid black;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#contacts img:hover{
+  background-color:#FAEBE6;
+  cursor: pointer;
+}
+
+#owner{
+  float: left;
+}
+
+#author{
+  float: right;
+  }
+
+@font-face{
+  font-family: Futwora;
+  src: url(../fonts/FutworaProBoldBold.woff2.ttf);
+}
